@@ -2,5 +2,6 @@ fix auto-select region
 Offline support?
 Translations?
 Parvum?
-dominical preces
-aperi & Saceisanctae
+Dominical preces
+Aperi & Sacrosancte.
+1570/1910 calendar
