@@ -221,6 +221,7 @@ require(['jquery','moment','calendar','chant-element'], function($,moment,calend
     currentPsalms.fullNotation = fullNotation();
     var ant = '',
         psalm = '',
+        antinit = '',
         pt = '',
         full = fullNotation()? '_full' : '';
     if(day === 'triduum') {
@@ -234,13 +235,16 @@ require(['jquery','moment','calendar','chant-element'], function($,moment,calend
       pt = paschalTime?'-PT':'';
       ant = paschalTime?
         "<chant-gabc src='psalms/ant-PT.gabc'></chant-gabc>" :
-        "<chant-gabc src='psalms/"+day+"/ant.gabc'></chant-gabc>";
+        "<chant-gabc src='psalms/0/ant.gabc'></chant-gabc>";
+      antinit = paschalTime?
+        "<chant-gabc src='psalms/ant-PT.gabc'></chant-gabc>" :
+        "<chant-gabc src='psalms/0/ant-init.gabc'></chant-gabc>";
       if(paschalTime === 'no-antiphon') ant = '';
-      psalm = "<chant-gabc src='psalms/"+day+"/psalm"+pt+full+".gabc'></chant-gabc>";
+      psalm = "<chant-gabc src='psalms/0/psalm"+pt+full+".gabc'></chant-gabc>";
       dayName = days[day];
     }
     var gotData = function(data){
-      var html = ant + psalm + data + ant;
+      var html = antinit + psalm + data + ant;
       $('#placeholder').empty().append(html);
     };
     if(full) {
