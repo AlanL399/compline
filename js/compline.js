@@ -250,8 +250,8 @@ require(['jquery','moment','calendar','chant-element'], function($,moment,calend
     if(full) {
       gotData('');
     } else if(typeof(day) !== 'undefined') {
-      $.get('psalms/'+day+'/psalm-verses'+pt+'.html',gotData).fail(function(){
-        $.get('psalms/'+day+'/psalm-verses.html',gotData);
+      $.get('psalms/0/psalm-verses'+pt+'.html',gotData).fail(function(){
+        $.get('psalms/0/psalm-verses.html',gotData);
       });
     }
   };
