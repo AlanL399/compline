@@ -7,4 +7,4 @@ Pre-Urban VIII Te lucis & Doxologies are preferred, even on newer feasts, ex. Ch
 
 Forked from [bbloomf/compline](https://github.com/bbloomf/compline).
 
-Hosted at [alanl399/compline](https://alanl399.github.com/compline).
+Hosted at [alanl399/compline](https://alanl399.github.io/compline).
